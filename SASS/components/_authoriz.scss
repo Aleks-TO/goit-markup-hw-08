@@ -1,0 +1,32 @@
+.authoriz {
+  display: flex;
+  gap: 50px;
+  margin: 0 0 0 auto;
+  &__item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+.authoriz__link {
+  display: flex;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: #757575;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: $accent-text;
+  }
+}

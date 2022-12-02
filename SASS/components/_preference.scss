@@ -1,0 +1,39 @@
+.preference {
+  padding: 94px 0 118px;
+}
+
+.preference__list {
+  display: flex;
+  gap: 30px;
+}
+.preference__item {
+  width: 270px;
+}
+.preference__icon-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background: $bg-icon-preference;
+  border-radius: 4px;
+}
+.preference__subtitle {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-text;
+}
+.preference__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: $secondary-text;
+}
