@@ -78,6 +78,12 @@
 <symbol id="mail" xmlns="http://www.w3.org/2000/svg">
       <path d="M15 3H3c-.83 0-1.5.67-1.5 1.5v9c0 .82.67 1.5 1.5 1.5h12c.82 0 1.5-.68 1.5-1.5v-9c0-.83-.68-1.5-1.5-1.5Zm-.3 3.19L9.4 9.5a.76.76 0 0 1-.8 0L3.3 6.2a.64.64 0 1 1 .68-1.08L9 8.25l5.03-3.14a.64.64 0 1 1 .67 1.08Z"/>
  </symbol>
+<symbol id="mobile-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <path d="M29.67 12.88 27.79 11l-7.46 7.45L12.88 11 11 12.88l7.45 7.45L11 27.8l1.88 1.88 7.45-7.46 7.46 7.46 1.88-1.88-7.46-7.46 7.46-7.45Z"/>
+</symbol>
+<symbol id="mobil-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <path  fill-rule="evenodd" d="M8 14.67V12h24v2.67H8Zm0 6.66h24v-2.66H8v2.66ZM8 28h24v-2.67H8V28Z" clip-rule="evenodd"/>
+</symbol>
 
   </defs>
 </svg>
