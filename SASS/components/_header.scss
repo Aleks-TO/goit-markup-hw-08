@@ -1,7 +1,7 @@
 .header {
   border-bottom: 1px solid $header-line;
   &__logo {
-    @media #{$mobile} {
+    @media screen and (max-width: 767px) {
       padding-top: 16px;
       padding-bottom: 16px;
     }
@@ -20,7 +20,7 @@
 .header-container {
   display: flex;
   align-items: center;
-  @media #{$mobile} {
+  @media screen and (max-width: 767px) {
     justify-content: space-between;
   }
 }
