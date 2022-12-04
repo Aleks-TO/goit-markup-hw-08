@@ -1,32 +1,52 @@
 .authoriz {
-  display: flex;
-  gap: 50px;
-  margin: 0 0 0 auto;
+  display: none;
+  &__icon {
+    margin-right: 8px;
+    fill: currentColor;
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    display: flex;
+    gap: 50px;
+    margin: 0 0 0 auto;
+  }
   &__item {
     font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.02em;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(16 / 14);
+    }
   }
-  &__icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
-}
-.authoriz__link {
-  display: flex;
-  align-items: center;
+  &__link {
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+    color: #757575;
 
-  color: #757575;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:focus,
-  &:hover {
-    color: $accent-text;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+      color: $accent-text;
+    }
   }
 }
