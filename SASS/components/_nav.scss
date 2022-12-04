@@ -1,7 +1,7 @@
 .nav {
   display: none;
   // outline: 1px solid red;
-  @media screen and (min-width: 768px) {
+  @media #{$tablet} {
     display: flex;
     margin-right: 96px;
   }
@@ -9,7 +9,7 @@
     display: flex;
   }
   &__item:not(:last-child) {
-    @media screen and (min-width: 768px) {
+    @media #{$tablet} {
       margin-right: 50px;
     }
   }

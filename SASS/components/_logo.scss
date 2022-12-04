@@ -6,7 +6,7 @@
   line-height: calc(28 / 24);
   letter-spacing: 0.03em;
   color: $primary-text;
-  @media screen and (min-width: 1200px) {
+  @media #{$desctop} {
     font-size: 26px;
     line-height: calc(31 / 26);
   }

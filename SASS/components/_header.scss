@@ -1,16 +1,16 @@
 .header {
   border-bottom: 1px solid $header-line;
   &__logo {
-    @media screen and (min-width: 480px) {
+    @media #{$mobile} {
       padding-top: 16px;
       padding-bottom: 16px;
     }
-    @media screen and (min-width: 768px) {
+    @media #{$tablet} {
       margin-right: 88px;
       padding-top: 26px;
       padding-bottom: 26px;
     }
-    @media screen and (min-width: 1200px) {
+    @media #{$desctop} {
       margin-right: 93px;
       padding-top: 24px;
       padding-bottom: 25px;
@@ -20,7 +20,7 @@
 .header-container {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 767px) {
+  @media #{$mobile} {
     justify-content: space-between;
   }
 }
