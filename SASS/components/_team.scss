@@ -1,39 +1,40 @@
 .team {
-  padding: 94px 0;
+  padding: 60px 0;
   background-color: $bg-section-second;
   &__descriptions {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     background-color: $light-text;
+    @media #{$desctop} {
+      padding-bottom: 30px;
+    }
   }
   &__title {
-    margin-bottom: 50px;
-
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42 / 36);
+    font-size: 28px;
+    line-height: calc(33 / 28);
     text-align: center;
     letter-spacing: 0.03em;
-    color: $primary-text;
+
+    color: #212121;
+    @media #{$desctop} {
+      margin-bottom: 50px;
+
+      font-weight: 700;
+      font-size: 36px;
+      line-height: calc(42 / 36);
+    }
   }
   &__subtitle {
-    margin-bottom: 10px;
-
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
     color: $primary-text;
-  }
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  &__item {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+
+    margin-bottom: 10px;
   }
   &__text {
     display: block;
@@ -45,5 +46,28 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $secondary-text;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @media #{$tablet} {
+      flex-direction: row;
+      flex-wrap: wrap;
+      .team__item {
+        $items: 2;
+        flex-basis: calc((100% - 30px * ($items - 1)) / ($items));
+      }
+    }
+    @media #{$desctop} {
+      .team__item {
+        $items: 4;
+        flex-basis: calc((100% - 30px * ($items - 1)) / ($items));
+      }
+    }
+  }
+  &__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
 }
