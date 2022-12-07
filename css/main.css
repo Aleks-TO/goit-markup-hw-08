@@ -339,8 +339,8 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img@desctop-1x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img@desctop-1x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Img@desctop-1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img@desctop-1x.jpg);
   }
 }
 .hero__text {
@@ -686,11 +686,39 @@ body {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__group {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 .footer__logo {
   text-align: center;
   display: block;
   margin-bottom: 28px;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: left;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__contacts {
+    padding-left: 76px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__contacts {
+    padding-left: 0;
+    text-align: left;
+  }
 }
 .footer__title {
   text-align: center;
@@ -701,6 +729,11 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: left;
+  }
 }
 
 .address__link {
@@ -715,6 +748,13 @@ body {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 12px;
 }
+@media screen and (min-width: 1200px) {
+  .address__link {
+    text-align: left;
+    margin-bottom: 9px;
+    line-height: 1.7142857143;
+  }
+}
 .address__text {
   color: #ffffff;
 }
@@ -722,14 +762,61 @@ body {
 .footer-socials {
   padding: 48px 0 60px 0;
 }
+@media screen and (min-width: 768px) {
+  .footer-socials {
+    margin-left: 165px;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    margin-left: 70px;
+  }
+}
 
 .social-list__link--dark {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe {
+    margin: 60px auto 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .subscribe__text {
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__text {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    letter-spacing: 0.03em;
+  }
 }
 
 .subscribe__field {
@@ -750,18 +837,37 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__field {
+    width: 358px;
+    padding-left: 16px;
+    margin-right: 12px;
+  }
+}
 .subscribe__field:focus {
   border-color: #2196f3;
 }
 
 .subscribe-btn {
+  width: 200px;
+  height: 50px;
   padding: 10px 28px;
-  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
 }
 .subscribe-btn__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .backdrop {
