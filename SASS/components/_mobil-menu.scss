@@ -51,13 +51,14 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  @extend .nav__link--current;
+
+  // @extend .nav__link--current;
 }
 
 .mobile-menu__link {
   display: block;
   padding-bottom: 32px;
-  // color: #fff;
+
   text-decoration: none;
 
   font-weight: 500;
@@ -65,7 +66,10 @@
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
 
-  // color: #212121;
+  color: #212121;
+}
+.mob__link--current {
+  color: #2196f3;
 }
 .mobile-socials {
   display: flex;
@@ -91,4 +95,27 @@
     letter-spacing: 0.02em;
     color: #2196f3;
   }
+}
+.mobile-phone {
+  padding-top: 306px;
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+
+  /* identical to box height */
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+  margin-bottom: 32px;
+}
+.mobile-mail {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+  margin-bottom: 64px;
 }
