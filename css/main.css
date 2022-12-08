@@ -329,6 +329,11 @@ body {
   max-width: 1600px;
   margin: 0 auto;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img@tablet-1x.jpg);
@@ -366,6 +371,11 @@ body {
 
 .preference {
   padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .preference {
+    padding: 94px 0 94px;
+  }
 }
 
 .preference__list {
@@ -493,6 +503,11 @@ body {
 .team {
   padding: 60px 0;
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
 }
 .team__descriptions {
   padding-top: 30px;

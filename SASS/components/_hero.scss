@@ -2,6 +2,9 @@
   max-width: 1600px;
   height: 400px;
   padding-top: 118px;
+  @media #{$desctop} {
+    padding-top: 200px;
+  }
   background-color: $bg-dark-color;
   background-size: cover;
   background-position: center;

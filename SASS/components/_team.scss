@@ -1,6 +1,9 @@
 .team {
   padding: 60px 0;
   background-color: $bg-section-second;
+  @media #{$desctop} {
+    padding: 94px 0;
+  }
   &__descriptions {
     padding-top: 30px;
     padding-bottom: 24px;

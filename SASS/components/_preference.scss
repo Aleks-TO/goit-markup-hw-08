@@ -1,6 +1,8 @@
 .preference {
   padding: 60px 0;
-  // padding: 94px 0 118px;
+  @media #{$desctop} {
+    padding: 94px 0 94px;
+  }
 }
 
 .preference__list {
