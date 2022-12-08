@@ -591,10 +591,14 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 480px) {
-  .clients {
-    padding: 60px 0;
-  }
+.menu-thumb {
+  position: absolute;
+  bottom: 48px;
+  left: 40px;
+}
+
+.clients {
+  padding: 60px 0;
 }
 @media screen and (min-width: 1200px) {
   .clients {
@@ -608,11 +612,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-}
-@media screen and (min-width: 480px) {
-  .clients__text {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .clients__text {
@@ -632,12 +632,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
-}
-@media screen and (min-width: 480px) {
-  .clients__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .clients__icon {
   fill: currentColor;
@@ -653,6 +649,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 210px;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
@@ -663,12 +661,6 @@ body {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 480px) {
-  .clients__link {
-    width: 210px;
-    height: 92px;
-  }
 }
 @media screen and (min-width: 768px) {
   .clients__link {

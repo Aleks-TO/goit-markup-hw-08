@@ -1,7 +1,7 @@
 .clients {
-  @media #{$mobile} {
-    padding: 60px 0;
-  }
+  // @media #{$mobile} {
+  padding: 60px 0;
+  // }
   @media #{$desctop} {
     padding: 94px 0;
   }
@@ -13,9 +13,9 @@
     letter-spacing: 0.03em;
 
     color: $primary-text;
-    @media #{$mobile} {
-      margin-bottom: 30px;
-    }
+    // @media #{$mobile} {
+    margin-bottom: 30px;
+    // }
     @media #{$desctop} {
       font-size: 36px;
       line-height: 42px;
@@ -27,9 +27,9 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    @media #{$mobile} {
-      flex-wrap: wrap;
-    }
+    // @media #{$mobile} {
+    flex-wrap: wrap;
+    // }
   }
   &__icon {
     fill: currentColor;
@@ -39,10 +39,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @media #{$mobile} {
-    width: 210px;
-    height: 92px;
-  }
+  // @media #{$mobile} {
+  width: 210px;
+  height: 92px;
+  // }
   @media #{$tablet} {
     width: 226px;
     height: 92px;
